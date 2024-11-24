@@ -111,7 +111,7 @@ public class FuncionarioController {
                 e.printStackTrace();
             }
         } else {
-            // Cria o arquivo se ele não existir
+
             try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(FILE_NAME))) {
                 out.writeObject(new ArrayList<Funcionario>());
             } catch (IOException e) {
